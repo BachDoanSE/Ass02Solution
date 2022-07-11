@@ -8,16 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SalesWinApp
+namespace SalesWinApp.Admin.AdminProduct
 {
-    public partial class frmProducts : Form
+    public partial class frmMemberUpdate : Form
     {
-        public frmProducts()
+        public frmMemberUpdate()
         {
             InitializeComponent();
         }
 
-        private void frmProducts_Load(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
 
         }

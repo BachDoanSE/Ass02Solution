@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SalesWinApp
+namespace SalesWinApp.Admin.AdminOrder
 {
-    public partial class frmProducts : Form
+    public partial class frmOrderManagement : Form
     {
-        public frmProducts()
+        public frmOrderManagement()
         {
             InitializeComponent();
-        }
-
-        private void frmProducts_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -92,7 +92,7 @@ namespace DataAccess
             return member;
         }
         public void AddNew(Member member)
-        { 
+        {
             try
             {
                 Member mem = GetMemberById(member.MemberId);
@@ -178,6 +178,12 @@ namespace DataAccess
             {
                 CloseConnection();
             }
+        }
+        public Member Login(string email, string password)
+        {
+            FStoreContext fs = new FStoreContext();
+            Member _member = fs.Members.Where(x => x.Email.Equals(email) && x.Password.Equals(password)).FirstOrDefault();
+            return _member;
         }
     }
 }
